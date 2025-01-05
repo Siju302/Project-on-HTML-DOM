@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project on HTML DOM</title>
+    </head>
+    <body style="background-color: paleturquoise;">
+
+        <center>
+        <h2><em>Javascript Arrays.</em></h2>
+
+        <p id="result1"></p>
+        <p id="result2"></p>
+        <p id="result3"></p>
+        <p id="result4"></p>
+
+        <script>
+            var animals = [" Rat", " Cow", " Dog", " Cat"];
+
+            // Display the original array
+            document.getElementById("result1").innerHTML = "1." + "Original Array: " +  animals + ".";
+
+             // Display the array joined with " * "
+             document.getElementById("result2").innerHTML = "2." + "Array with join: " + animals.join(" * ") + ".";
+
+             // Remove the last element using pop()
+             animals.pop();
+             document.getElementById("result3").innerHTML = "3." + "Array after pop: " + animals + ".";
+
+        </script>
+        </center>
+    </body>
+</html>
